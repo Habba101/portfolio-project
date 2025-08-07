@@ -1,6 +1,7 @@
 :root {
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -21,7 +22,7 @@ h6 {
 
 h1 {
   font-size: 96px;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 h2 {
@@ -32,6 +33,91 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--branding-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+  color: white;
+}
+
+.about-link {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.content-container {
+  padding: 160px 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: var(--default-font-family);
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.content {
+  margin: 30px;
+}
+
+.about-paragraphs {
+  display: block;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hero {
@@ -73,21 +159,58 @@ p {
 }
 
 .project-description {
-  padding: 120px 60px;
+  padding: 50px 60px;
+  margin-bottom: 60px;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
 }
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 44px;
-    line-height: 2;
+    font-size: 45px;
+    line-height: 56px;
   }
 
   h2 {
-    font-size: 44px;
+    font-size: 40px;
   }
 
   .hero {
     padding: 80px 20px;
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 0;
   }
 
   .project-description {
