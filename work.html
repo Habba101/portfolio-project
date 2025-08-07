@@ -29,6 +29,30 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <div class="container">
+    <nav class="d-flex justify-content-between">
+      <a href="/" title="Homepage">
+        <img
+          src="Images/logo.png"
+          class="logo d-md-block d-none"
+          alt="Rahaba logo"
+        />
+        <img
+          src="Images/SheCodes.png"
+          class="logo d-block d-md-none"
+          alt="Rahaba logo"
+        />
+      </a>
+      <ul>
+        <li><a href="/" title="Homepage"> Home</a></li>
+        <li><a href="/about.html" title="About Rahaba"> About</a></li>
+        <li class="active">
+          <a href="/work.html" title="Rahaba's work"> Work</a>
+        </li>
+        <li><a href="/contact.html" title="Let's talk"> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
   <body>
     <div class="content-container container">
       <div class="content">
@@ -38,7 +62,7 @@
             <img
               src="images/yoghurt.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="Yogurt project preview"
             />
             <h3 class="text-center m-0">Yogurt Project</h3>
             <p class="text-center text-muted">Built with HTML and CSS</p>
@@ -48,7 +72,7 @@
             <img
               src="images/weather.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="Weather project preview"
             />
             <h3 class="text-center m-0">Weather App</h3>
             <p class="text-center text-muted">
@@ -59,7 +83,7 @@
             <img
               src="images/dictionary.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="Dictionary app preview"
             />
             <h3 class="text-center m-0">Dictionary</h3>
             <p class="text-center text-muted">Built with HTML, CSS and React</p>
@@ -68,13 +92,68 @@
             <img
               src="images/translator.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="translator app preview"
             />
             <h3 class="text-center m-0">Translation</h3>
             <p class="text-center text-muted">Built with HTML, CSS and React</p>
           </div>
         </div>
       </div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              title="Let's talk"
+              class="btn btn-branding mt-3"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <div>
+          <a
+            href="mailto:rahabamotaung@yahoo.com"
+            class="email-link mb-5"
+            title="Email me"
+            >rahabamotaung@yahoo.com</a
+          >
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://www.github.com/Habba101"
+            target="_blank"
+            title="Github Profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/Habba101"
+            target="_blank"
+            title="Instagram Profile"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/rahabamotaung"
+            target="_blank"
+            title="Twitter Profile"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5">
+          This project was coded by SheCodes and it is
+          <a
+            href="https://github.com/Habba101/portfolio-project"
+            target="_blank"
+            >open-sourced 🤙🏽</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
